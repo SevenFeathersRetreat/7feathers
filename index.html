@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Seven Feathers Retreat</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+<nav>
+  <span class="nlogo" onclick="showPage('main')" style="display:inline-flex;align-items:center;gap:.5rem;cursor:pointer;">
+    <canvas id="navLogo" width="56" height="56" style="flex-shrink:0;width:56px;height:56px;"></canvas>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);letter-spacing:.05em;">Seven Feathers</span>
+  </span>
+  <ul class="nlinks">
+    <li id="nll1"><a href="#about">About</a></li>
+    <li id="nll2"><a href="#reviews">Reviews</a></li>
+    <li id="nll3"><a href="#vision">The Vision</a></li>
+    <li><a href="javascript:void(0)" id="ni" onclick="showPage('invest')" style="color:var(--au);">Invest</a></li>
+    <li><a href="javascript:void(0)" id="nb" onclick="showPage('main')" style="display:none;color:var(--st);">← Back</a></li>
+  </ul>
+</nav>
+
+<div id="page-main" class="page active">
+
+<div class="sid" style="min-height:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:70px 2rem 2rem;position:relative;">
+  <canvas id="heroCanvas" style="position:relative;z-index:1;"></canvas>
+  <div id="heroText" style="animation:heroTextIn 2.5s ease-out 6.5s forwards;text-align:center;position:relative;z-index:1;margin-top:.5rem;opacity:0;">
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,6vw,4rem);font-weight:300;color:var(--bk);letter-spacing:.2em;margin-bottom:.3rem;line-height:1.1;">SEVEN <em style="color:var(--g);font-style:italic;">FEATHERS</em></h1>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(.8rem,2vw,1rem);font-weight:300;color:var(--st);letter-spacing:.35em;text-transform:uppercase;margin-bottom:.8rem;">Retreat</p>
+    <div style="width:60px;height:1px;background:var(--au);margin:.6rem auto;opacity:.6;"></div>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(.8rem,1.5vw,.95rem);font-style:italic;color:var(--st);letter-spacing:.1em;opacity:.8;">Blue Ridge Mountains, North Carolina</p>
+  </div>
+
+</div>
+
+<div class="wl">
+  <div class="wli">
+    <div class="wley">Welcome</div>
+    <h2 class="wlt">This Land Is Ready<br><em>to Welcome You</em></h2>
+    <div class="grc"></div>
+    <p class="wlb">Nine and a half acres in the Blue Ridge Mountains. A creek that runs year-round. Spectacular stargazing on clear mountain nights. Fireflies that turn the meadow into something magical. Wildlife that reminds you the world is alive, and birdsong that starts before you do. A cottage that has welcomed travelers from across the country and left them wanting to come back.</p>
+    <p class="wlb">Seven Feathers is already a place of rest and restoration. And it is becoming something more: a full retreat sanctuary, being built with intention, one phase at a time, for healing, for community, and for the kind of connection people are hungry for but rarely find.</p>
+    <p class="wlb">We are actively seeking kindred investors and partners, people who see the vision, believe in the land, and want to be part of building something that lasts. If that is you, you are in the right place. Welcome to the journey.</p>
+    <div class="wlq">
+      <span class="wlqi">🪶</span>
+      <p>Some places hold you the moment you step onto them. This is one. We are looking for people who feel that too, and want to help it become everything it is meant to be.</p>
+    </div>
+  </div>
+</div>
+
+<div id="about" class="sb">
+  <div class="si">
+    <div class="ey">The Founder</div><div class="gr"></div>
+    <h2 class="st">Meet <em>Amy Rohan</em></h2>
+    <p class="wlb" style="color:var(--st);">Amy Rohan founded Seven Feathers by taking stock of what she already had: land with a rare, quiet power; decades of experience guiding and caring for people; and an innate sense of how to hold space for healing. She built from those gifts intentionally, creating a place where both land and practice meet to help people slow down, heal, and reconnect.</p>
+    <p class="wlb" style="color:var(--st);">With more than 25 years of experience across legal operations, nonprofit programs, and community care, Amy has managed complex budgets, led cross-sector teams, and collaborated with legal, financial, and community partners in high-accountability environments. Yet the work that shaped her most happened one-on-one, supporting individuals and families through life's most challenging seasons, skills she brings to every guest experience.</p>
+    <p class="wlb" style="color:var(--st);">A certified Reiki Master, Amy has offered energy sessions to guests and will integrate that practice fully into the Seven Feathers retreat experience, creating a container for restoration grounded in both intention and expertise.</p>
+    <p class="wlb" style="color:var(--st);">She creates spaces where respect, sovereignty, and belonging are felt in every detail, where the land and the people it holds are honored, and where those who come are given the chance to simply arrive, fully seen, and quietly transformed.</p>
+
+    <div class="gr" style="margin-top:2.5rem;"></div>
+    <div class="ey" style="margin-top:2rem;">What's on the Land</div>
+    <h2 class="st" style="margin-top:.5rem;">The Property, <em>Ready and Growing</em></h2>
+    <div class="prop-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem;">
+      <div style="background:white;border:1px solid var(--ms);border-radius:2px;padding:1.4rem;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);margin-bottom:.5rem;">The Storybook Cottage</div>
+        <p style="font-size:.88rem;color:var(--st);line-height:1.7;margin:0;">The current Airbnb rental with a 4.96-star rating. Sleeps 4 guests, full kitchen, high-speed internet, outdoor heated shower, fenced yard, and fire pit.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--ms);border-radius:2px;padding:1.4rem;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);margin-bottom:.5rem;">Nearly Ten Acres</div>
+        <p style="font-size:.88rem;color:var(--st);line-height:1.7;margin:0;">Creek, hiking trails, exceptional stargazing, natural boulders, wildflowers, and mature trees. Five fenced areas, a garden, chicken coop, and covered animal enclosure.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--ms);border-radius:2px;padding:1.4rem;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);margin-bottom:.5rem;">Ready for Expansion</div>
+        <p style="font-size:.88rem;color:var(--st);line-height:1.7;margin:0;">A 700 sq ft building with water and electricity, ready for conversion into a shared bathhouse and communal kitchen. Prepared sites with full utility hookups for two ZomeStudio dwellings.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--ms);border-radius:2px;padding:1.4rem;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);margin-bottom:.5rem;">Owner-Occupied</div>
+        <p style="font-size:.88rem;color:var(--st);line-height:1.7;margin:0;">Amy lives on the property full-time in the main house, providing the kind of personal, attentive hospitality that drives the 4.96-star rating and keeps guests coming back.</p>
+      </div>
+    </div>
+
+    <div class="gr" style="margin-top:3rem;"></div>
+    <div class="ey" style="margin-top:2rem;">Our Values</div>
+    <h2 class="st" style="margin-top:.5rem;">The Seven Feathers</h2>
+    <p class="intro">These principles shape every decision we make, from how we welcome guests to how we tend this land. Tap a feather to learn more.</p>
+    <div class="flip-grid">
+      <div class="flip-card" onclick="this.classList.toggle('flipped')"><div class="flip-inner">
+        <div class="flip-front"><canvas class="fc-feather-lg" data-index="0" width="140" height="260"></canvas><div class="flip-name">Respect</div><div class="flip-tag">Every path is honored here.</div></div>
+        <div class="flip-back"><canvas class="fc-feather-lg-back" data-index="0" width="140" height="260"></canvas><div class="flip-back-name">Respect</div><p>Whether you arrive as a spiritual seeker, someone needing rest, or someone carrying something you have not yet named, you will be met with the same respect.</p></div>
+      </div></div>
+      <div class="flip-card" onclick="this.classList.toggle('flipped')"><div class="flip-inner">
+        <div class="flip-front"><canvas class="fc-feather-lg" data-index="1" width="140" height="260"></canvas><div class="flip-name">Sacred Reciprocity</div><div class="flip-tag">What we receive, we return.</div></div>
+        <div class="flip-back"><canvas class="fc-feather-lg-back" data-index="1" width="140" height="260"></canvas><div class="flip-back-name">Reciprocity</div><p>We enter into relationships with guests, partners, and the land with mutual care. We support local businesses, build fair partnerships, and tend what gives to us.</p></div>
+      </div></div>
+      <div class="flip-card" onclick="this.classList.toggle('flipped')"><div class="flip-inner">
+        <div class="flip-front"><canvas class="fc-feather-lg" data-index="2" width="140" height="260"></canvas><div class="flip-name">Restoration</div><div class="flip-tag">Return to your natural state.</div></div>
+        <div class="flip-back"><canvas class="fc-feather-lg-back" data-index="2" width="140" height="260"></canvas><div class="flip-back-name">Restoration</div><p>Like the land after rain, we are always capable of becoming ourselves again. Seven Feathers creates the conditions for that return.</p></div>
+      </div></div>
+      <div class="flip-card" onclick="this.classList.toggle('flipped')"><div class="flip-inner">
+        <div class="flip-front"><canvas class="fc-feather-lg" data-index="3" width="140" height="260"></canvas><div class="flip-name">Kinship</div><div class="flip-tag">We are all related.</div></div>
+        <div class="flip-back"><canvas class="fc-feather-lg-back" data-index="3" width="140" height="260"></canvas><div class="flip-back-name">Kinship</div><p>Seven Feathers exists within a living web of relationships. When you visit, you are supporting a community, not just a business.</p></div>
+      </div></div>
+      <div class="flip-card" onclick="this.classList.toggle('flipped')"><div class="flip-inner">
+        <div class="flip-front"><canvas class="fc-feather-lg" data-index="4" width="140" height="260"></canvas><div class="flip-name">Belonging</div><div class="flip-tag">Everyone fits here.</div></div>
+        <div class="flip-back"><canvas class="fc-feather-lg-back" data-index="4" width="140" height="260"></canvas><div class="flip-back-name">Belonging</div><p>You belong here with your dog, your grief, your curiosity, or your joy. Belonging is your birthright, and this door is open to you.</p></div>
+      </div></div>
+      <div class="flip-card" onclick="this.classList.toggle('flipped')"><div class="flip-inner">
+        <div class="flip-front"><canvas class="fc-feather-lg" data-index="5" width="140" height="260"></canvas><div class="flip-name">Sovereignty</div><div class="flip-tag">Your body, your spirit, your path.</div></div>
+        <div class="flip-back"><canvas class="fc-feather-lg-back" data-index="5" width="140" height="260"></canvas><div class="flip-back-name">Sovereignty</div><p>Amy spent over a decade working with survivors of violence. That shapes everything here: trauma-informed care and consent at the center of all healing work.</p></div>
+      </div></div>
+      <div class="flip-card flip-card-wide" onclick="this.classList.toggle('flipped')"><div class="flip-inner">
+        <div class="flip-front"><canvas class="fc-feather-lg" data-index="6" width="140" height="260"></canvas><div class="flip-name">Dignity</div><div class="flip-tag">Worth that can never be taken.</div></div>
+        <div class="flip-back"><canvas class="fc-feather-lg-back" data-index="6" width="140" height="260"></canvas><div class="flip-back-name">Dignity</div><p>You are worthy, exactly as you are. Every person, every animal, every piece of this land deserves dignity. We price our offerings to be accessible to everyone.</p></div>
+      </div></div>
+    </div>
+  </div>
+</div>
+
+<div id="reviews">
+  <div class="si">
+    <div class="ey">Proven &amp; Operating</div><div class="gr"></div>
+    <h2 class="st">Already Earning.<br><em>Already Loved.</em></h2>
+    <p class="intro">The Storybook Cottage is actively listed on Airbnb with a 4.96-star rating and consistent bookings year-round. These photos show the land and cottage as they exist today.</p>
+    <div class="pg">
+      <div class="pp pgm"><img src="IMG_1049.jpeg" alt="Storybook Cottage and grounds"><div class="pp-overlay"><div class="ppl">Main House</div></div></div>
+      <div class="pp"><img src="IMG_1050.jpeg" alt="The land"><div class="pp-overlay"><div class="ppl">The Land</div></div></div>
+      <div class="pp"><img src="IMG_1076.jpeg" alt="Cottage interior"><div class="pp-overlay"><div class="ppl">Cottage Interior</div></div></div>
+      <div class="pp"><img src="IMG_1048.jpeg" alt="Aerial view"><div class="pp-overlay"><div class="ppl">Aerial View</div></div></div>
+      <div class="pp"><img src="IMG_1074.jpeg" alt="Fire pit"><div class="pp-overlay"><div class="ppl">Fire Pit</div></div></div>
+    </div>
+    <div class="ey" style="margin-bottom:.5rem">Guest Reviews</div>
+    <h3 class="prt">What Guests Are <em>Saying</em></h3>
+    <p style="font-size:.9rem;color:var(--st);margin-bottom:2rem;">4.96 out of 5 stars · Airbnb Guest Favorite · Verified guest reviews</p>
+    <div class="rg">
+      <div class="rc rf"><div class="rs">★★★★★</div><blockquote class="rt">"The cabin was truly relaxing, nestled perfectly in the trees by a creek. Waking up to the sound of birds and the creek, breathing in the fresh air, and disconnecting from the rush of everyday life was such a gift."</blockquote><div class="rm"><div class="rname">Stephanie</div><div class="rdet">April 2025 · Stayed with a pet</div></div></div>
+      <div class="rc"><div class="rs">★★★★★</div><blockquote class="rt">"Almost wished we hadn't planned so much to do so we could enjoy the house more! It was gorgeous and loved listening to the babbling brook at night."</blockquote><div class="rm"><div class="rname">Maggie</div><div class="rdet">Omaha, NE · April 2025 · Stayed with a pet</div></div></div>
+      <div class="rc"><div class="rs">★★★★★</div><blockquote class="rt">"Amy was so friendly and my daughter enjoyed a Reiki session with her."</blockquote><div class="rm"><div class="rname">Rachel</div><div class="rdet">Wartrace, TN · October 2025 · Stayed with a pet</div></div></div>
+      <div class="rc"><div class="rs">★★★★★</div><blockquote class="rt">"Beautiful cabin in such a peaceful setting. It was our second time back and we absolutely enjoyed it."</blockquote><div class="rm"><div class="rname">Tanya</div><div class="rdet">Greer, SC · September 2025 · Stayed with a pet</div></div></div>
+      <div class="rc"><div class="rs">★★★★★</div><blockquote class="rt">"Hope to come back sometime when we can just relax in the peaceful location and explore the grounds."</blockquote><div class="rm"><div class="rname">Martha</div><div class="rdet">Raleigh, NC · July 2025 · Stayed with a pet</div></div></div>
+      <div class="rc"><div class="rs">★★★★★</div><blockquote class="rt">"What a gem! The only thing you hear while sitting on the deck is birdsong, a babbling brook and an occasional moo from the neighboring cows. Highly recommend!"</blockquote><div class="rm"><div class="rname">Jessica</div><div class="rdet">Durham, NC · July 2025</div></div></div>
+      <div class="rc"><div class="rs">★★★★★</div><blockquote class="rt">"When we got snowed in we received eggs from the onsite host Amy, who was amazing and very helpful. The views as well as location is a dream come true!"</blockquote><div class="rm"><div class="rname">Hanna &amp; Dustin</div><div class="rdet">December 2025 · Stayed with a pet</div></div></div>
+      <div class="rc"><div class="rs">★★★★★</div><blockquote class="rt">"The guest house was the perfect place to relax and recharge. I absolutely love this house and outdoor space. Its my dream."</blockquote><div class="rm"><div class="rname">Kathleen</div><div class="rdet">May 2025 · Stayed with a pet</div></div></div>
+      <div class="rc"><div class="rs">★★★★★</div><blockquote class="rt">"The cabin was truly relaxing, nestled perfectly in the trees by a creek. Waking up to the sound of birds and the creek, breathing in the fresh air, and disconnecting from the rush of everyday life was such a gift."</blockquote><div class="rm"><div class="rname">Stephanie</div><div class="rdet">April 2025 · Stayed with a pet</div></div></div>
+      <div class="rc"><div class="rs">★★★★★</div><blockquote class="rt">"Lovely little cabin with beautiful surroundings. I wish I could've spent more time there, enjoying the property but I was only in town for a day."</blockquote><div class="rm"><div class="rname">Allison</div><div class="rdet">Kingsport, TN · May 2025 · Stayed a few nights</div></div></div>
+    </div>
+    <div class="rftr"><div class="rrat"><span class="rsco">4.96</span><span style="color:var(--au);font-size:1.1rem;">★★★★★</span><span style="font-size:.78rem;color:var(--st);">Airbnb Guest Favorite · 100 reviews</span></div></div>
+  </div>
+</div>
+
+<div id="vision" class="sdk">
+  <div class="si">
+    <div class="ey" style="color:var(--au);">The Vision</div><div class="gr"></div>
+    <h2 class="st stl">Where Seven Feathers<br><em>Is Headed</em></h2>
+    <p class="intro introl">The phased expansion covers the first four years. But the vision extends well beyond, toward a retreat deeply rooted in its community, accessible to all who need restoration, and alive with the rhythms of the land.</p>
+    <div class="vc">
+      <div class="vcard"><div class="vcardic">🌿</div><div class="vcardt">Retreat Scholarships &amp; Accessibility</div><p class="vcardb">Restoration belongs to everyone. We plan to establish a scholarship fund making retreat experiences accessible to those who need them most.</p><ul class="vcardl"><li>Scholarship spots in every retreat cycle</li><li>Sliding-scale pricing for local community</li><li>Partnership with regional nonprofits</li></ul></div>
+      <div class="vcard"><div class="vcardic">🤝</div><div class="vcardt">Community Partnerships</div><p class="vcardb">Seven Feathers is rooted in its community, and its success should benefit the people around it, local farms, artisans, and regional wellness practitioners.</p><ul class="vcardl"><li>Farm-to-table dining with local farms</li><li>On-site services from local bodyworkers</li><li>Local artisan workshops</li></ul></div>
+      <div class="vcard"><div class="vcardic">🌱</div><div class="vcardt">Garden Expansion &amp; Immersion</div><p class="vcardb">The garden becomes a living part of the retreat experience. Guests leave not just rested, but with knowledge and seeds they can take home.</p><ul class="vcardl"><li>Full-scale medicinal herb garden</li><li>Seasonal planting and harvest workshops</li><li>Contemplative garden for meditation</li></ul></div>
+      <div class="vcard"><div class="vcardic">🦙</div><div class="vcardt">Animals on the Land</div><p class="vcardb">Animals are already part of life at Seven Feathers. The long-term vision expands that presence thoughtfully, with alpacas and animal-assisted healing experiences.</p><ul class="vcardl"><li>Alpacas, gentle, calming, and naturally healing</li><li>Fiber arts and alpaca encounter workshops</li><li>Existing chicken flock as homestead experience</li></ul></div>
+    </div>
+    <div class="vclos">
+      <p>Everything in this long-term vision serves the same purpose: deepening the retreat experience, strengthening the local community, and making restoration more accessible.</p>
+      <p>The retreat's ultimate measure of success goes beyond revenue. It is the number of people who leave this land feeling more like themselves than when they arrived.</p>
+      <div class="vctag">A place of restoration, belonging, and sacred return.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fn">Seven Feathers Retreat</div>
+  <div class="fv">Respect · Sacred Reciprocity · Restoration · Kinship<br>Belonging · Sovereignty · Dignity</div>
+</footer>
+
+</div><!-- end page-main -->
+
+<!-- INVESTOR PAGE -->
+<div id="page-invest" class="page">
+<div id="gate">
+  <div class="gi">
+    <span class="gfe">🪶</span>
+    <div class="gey">Seven Feathers Retreat</div>
+    <h1 class="gt">Partner With<br><em>Us</em></h1>
+    <p class="gtx">This page contains detailed information about investment and partnership opportunities at Seven Feathers. We share it personally with people who have expressed genuine interest in walking this path with us.</p>
+    <p class="gtx" style="font-size:.88rem;">To receive access, please reach out and introduce yourself.</p>
+    <div class="ccs">
+      <a href="mailto:info@7feathersretreat.com" class="cc"><div>✉️</div><div class="ccl">Email</div><div class="ccv">info@7feathersretreat.com</div></a>
+      <a href="tel:3362676897" class="cc"><div>📱</div><div class="ccl">Call or Text</div><div class="ccv">336-267-6897</div></a>
+    </div>
+    <div class="gd2">Already have the access code?</div>
+    <div class="pwf">
+      <input type="password" class="pwi" id="pwd" placeholder="Enter access code" onkeydown="if(event.key==='Enter')unlock()">
+      <button class="pwb" onclick="unlock()">Enter</button>
+    </div>
+    <div class="pwe" id="perr">That code does not match. Please reach out for access.</div>
+  </div>
+</div>
+
+<div id="ic">
+  <div class="ih">
+    <div class="ihbg"></div>
+    <div class="ey" style="position:relative">Investment &amp; Partnership Opportunities</div>
+    <h1 class="iht">A Place Worth<br><em>Believing In</em></h1>
+    <p class="ihs">Seven Feathers is looking for partners who see what this land can become and want to help it get there.</p>
+    <div class="grc"></div>
+    <p style="font-size:.85rem;color:var(--st);letter-spacing:.1em;text-transform:uppercase;position:relative;">Ashe County · Blue Ridge Mountains</p>
+  </div>
+
+  <div class="isec">
+    <div class="ey">At a Glance</div><div class="grl"></div>
+    <h2 class="st">The Opportunity<br><em>in Numbers</em></h2>
+    <p class="intro">An existing, income-producing property with a 4.96-star Airbnb rating, ready for phased expansion into a multi-revenue retreat destination.</p>
+    <div class="sg">
+      <div class="sc"><div style="font-size:1.4rem;margin-bottom:.8rem">⭐</div><div class="scn">4.96</div><div class="scl">Airbnb Rating</div></div>
+      <div class="sc"><div style="font-size:1.4rem;margin-bottom:.8rem">🌿</div><div class="scn">9.62</div><div class="scl">Acres in the Blue Ridge</div></div>
+      <div class="sc"><div style="font-size:1.4rem;margin-bottom:.8rem">📈</div><div class="scn">$170K</div><div class="scl">Projected Year 3 Revenue</div></div>
+      <div class="sc"><div style="font-size:1.4rem;margin-bottom:.8rem">🏡</div><div class="scn">$10,290</div><div class="scl">2025 Revenue, Partial Year</div></div>
+      <div class="sc"><div style="font-size:1.4rem;margin-bottom:.8rem">🌎</div><div class="scn">$950B</div><div class="scl">Global Wellness Tourism Market</div></div>
+      <div class="sc"><div style="font-size:1.4rem;margin-bottom:.8rem">🪶</div><div class="scn">3</div><div class="scl">Phased Expansion Stages</div></div>
+    </div>
+  </div>
+
+  <div class="iband">
+    <div class="ibandi">
+      <div class="ey">The Opportunity</div><div class="grl"></div>
+      <div class="og">
+        <div>
+          <h2 class="st">Building Something<br><em>Real and Lasting</em></h2>
+          <p>Seven Feathers is an existing, operating short-term rental with a proven track record, a deeply invested owner-operator on-site, and a clear, phased plan to grow into a multi-revenue retreat destination.</p>
+          <p>Each phase generates revenue before the next requires significant capital, limiting the amount at risk at any one time.</p>
+          <div class="opull">"This property has earned real revenue from day one. Under full-time management, these numbers are just the beginning."</div>
+          <p>The global wellness tourism market was valued at approximately $950 billion in 2024 and is projected to reach $1.7 to $2.0 trillion by 2030.</p>
+        </div>
+        <div>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--g);margin-bottom:1.2rem;font-style:italic;">Capital Allocation by Phase</h3>
+          <div class="pl">
+            <div class="pi"><div class="piname">Property Down Payment<span>Owner contribution $15,000, investor funding $10,000</span></div><div class="piamt">$10,000</div></div>
+            <div class="pi"><div class="piname">Phase 1, Revenue Optimization<span>Platforms, website, marketing</span></div><div class="piamt">$5,000</div></div>
+            <div class="pi"><div class="piname">Phase 2, Accommodation &amp; Bathhouse<span>Two ZomeStudio dwellings, decks, furnishing, bathhouse conversion</span></div><div class="piamt">$75,000</div></div>
+            <div class="pi"><div class="piname">Phase 3, Property Enhancement<span>Gardens, pond, trails, gathering spaces, photography</span></div><div class="piamt">$15,000</div></div>
+            <div class="pi"><div class="piname">Marketing &amp; Branding<span>Website, SEO, photography</span></div><div class="piamt">$7,000</div></div>
+            <div class="pi"><div class="piname">Owner-Operator Compensation<span>Full-time on-site management, months 1 to 12</span></div><div class="piamt">$36,000</div></div>
+            <div class="pi"><div class="piname">Operating Reserve<span>Working capital buffer</span></div><div class="piamt">$35,000</div></div>
+            <div class="pi"><div class="piname">Contingency<span>Unexpected costs</span></div><div class="piamt">$17,000</div></div>
+            <div class="pi ptot"><div class="piname">Total Investment Sought<span>Full buildout, all phases</span></div><div class="piamt">$200,000</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="isec">
+    <div class="ey">Revenue Projections</div><div class="grl"></div>
+    <h2 class="st">Conservative<br><em>3-Year Path</em></h2>
+    <p class="intro">Built from occupancy rates, nightly rates, and venue booking frequency. Each assumption is shown below so every number can be traced and tested. Updated quarterly as real data becomes available.</p>
+    <table class="pt">
+      <thead><tr><th>Revenue Stream</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead>
+      <tbody>
+        <tr><td>Total Accommodation Revenue</td><td>$51K–$57K</td><td>$84K–$98K</td><td>$99K–$116K</td></tr>
+        <tr><td>Venue Rental Weekends</td><td>$6K–$15K</td><td>$12K–$27K</td><td>$22K–$36K</td></tr>
+        <tr><td>Reiki, Experiences &amp; Events</td><td>$5K–$12K</td><td>$8K–$15K</td><td>$10K–$18K</td></tr>
+        <tr><td><strong>Total Revenue</strong></td><td><strong>$62K–$84K</strong></td><td><strong>$104K–$140K</strong></td><td><strong>$131K–$170K</strong></td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);margin:2rem 0 1rem;font-style:italic;">Assumptions Behind the Numbers</h3>
+    <table class="pt" style="font-size:.82rem;">
+      <thead><tr><th>Unit</th><th>Occupancy</th><th>Avg Rate</th><th>Available Nights</th></tr></thead>
+      <tbody>
+        <tr><td>Cottage (Year 1 / 2 / 3)</td><td>55% / 60% / 64%</td><td>$125 / $135 / $145</td><td>365 all years</td></tr>
+        <tr><td>Zome 1 (Year 1 / 2 / 3)</td><td>44% / 47% / 52%</td><td>$160 / $165 / $175</td><td>~180 / 365 / 365</td></tr>
+        <tr><td>Zome 2 (Year 1 / 2 / 3)</td><td>44% / 47% / 52%</td><td>$160 / $165 / $175</td><td>~180 / 365 / 365</td></tr>
+        <tr><td>Venue weekends per year</td><td colspan="3">6–10 (Year 1) · 12–18 (Year 2) · 18–24 (Year 3) at $1,000–$1,500 avg</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.85rem;color:var(--st);line-height:1.7;margin-top:.8rem;">Venue weekends use the same beds as nightly rentals, so there is no double-counting. The occupancy figures above already account for nights reserved for retreat use. Year 1 Zome nights reflect a partial year (units come online around month 6 to 8). Cottage rate increases in Years 2 and 3 reflect garden, pond, and grounds improvements from Phase 3, along with growing reputation and review history.</p>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);margin:2rem 0 1rem;font-style:italic;">Comparable Performance</h3>
+    <p style="font-size:.85rem;color:var(--st);line-height:1.7;">The previous property owner earned up to $51,000 annually across four rental units on this property and a neighboring property in Trade, TN, with rates of $75 to $95 per night, no advertising, no experiences, and no retreat programming. Those earnings, from a baseline of minimal effort, represent the floor that Seven Feathers is already building above with active management, a 4.96-star rating, and higher nightly rates.</p>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--g);margin:2rem 0 1rem;font-style:italic;">Annual Operating Expenses</h3>
+    <table class="pt" style="font-size:.82rem;">
+      <thead><tr><th>Expense</th><th>Annual Cost</th></tr></thead>
+      <tbody>
+        <tr><td>Property Taxes</td><td>$1,700</td></tr>
+        <tr><td>Insurance (property + commercial liability)</td><td>$2,000</td></tr>
+        <tr><td>Gas / Heating</td><td>$2,400</td></tr>
+        <tr><td>Internet (all units)</td><td>$1,080</td></tr>
+        <tr><td>Electric</td><td>$4,200</td></tr>
+        <tr><td>Supplies</td><td>$2,400</td></tr>
+        <tr><td>Platform Booking Fees (~3%)</td><td>$2,000–$4,000</td></tr>
+        <tr><td>Maintenance &amp; Repairs</td><td>$2,000–$3,000</td></tr>
+        <tr><td><strong>Total Operating Expenses</strong></td><td><strong>$18,000–$22,000</strong></td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.85rem;color:var(--st);line-height:1.7;margin-top:.8rem;">At Year 1 revenue of $62K to $84K and operating expenses of $18K to $22K, the property generates $40K to $62K in operating margin before owner compensation. By Year 3, operating margin reaches $108K to $147K. Website hosting and marketing are handled by the owner at no additional cost during the initial growth period.</p>
+    <div class="dlb">
+      <div class="dlbt"><strong>Full Investment Opportunity Document</strong><br>Detailed phase breakdowns, market analysis, risk mitigation, and exit strategy options.</div>
+      <div style="display:flex;gap:.8rem;flex-wrap:wrap;">
+        <button class="dlbb" onclick="openDocViewer()">📄 View Document</button>
+        <a href="mailto:info@7feathersretreat.com" class="dlbb email-btn">✉️ Request Email Copy</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="idk">
+    <div class="idki">
+      <div class="ey">Partnership Structures</div><div class="grl"></div>
+      <h2 class="st stl">Ways We Can<br><em>Work Together</em></h2>
+      <p class="intro introl">There is no single right way to partner with Seven Feathers. The best agreements are built around what each person brings and what they need in return.</p>
+      <div class="strg">
+        <div class="strc"><div style="font-size:1.5rem;margin-bottom:1rem">🌱</div><div class="strct">Financial Partnership</div><div class="strtag">Equity, revenue share, or loan</div><p class="strcb">Whether you prefer ownership, a share of revenue, or a straightforward loan with interest, we are open to structuring the partnership around what works best for you. All financial arrangements include transparent quarterly reporting, a formal operating agreement, and clearly defined terms.</p><div class="strd"><div class="strdi">Equity stake with distributions tied to profitability</div><div class="strdi">Revenue share tied to specific streams or the whole operation</div><div class="strdi">Loan with interest and milestone-based repayment</div><div class="strdi">Hybrid structures welcome</div></div></div>
+        <div class="strc"><div style="font-size:1.5rem;margin-bottom:1rem">🤝</div><div class="strct">Non-Financial Partnership</div><div class="strtag">What you bring matters too</div><p class="strcb">Skills, networks, labor, materials, and expertise are all forms of real value. We are open to creative arrangements that honor what you bring to the table.</p><div class="strd"><div class="strdi">Marketing, design, or web expertise</div><div class="strdi">Construction, landscaping, or trade skills</div><div class="strdi">Wellness practitioner services or facilitation</div><div class="strdi">Network connections, referrals, or media reach</div></div></div>
+        <div class="strc" style="grid-column:1/-1;background:rgba(160,125,58,.06);border:1px solid rgba(160,125,58,.3);"><div style="font-size:1.5rem;margin-bottom:1rem">🪶</div><div class="strct" style="color:var(--au);">Investor Access to the Land</div><div class="strtag">Your investment includes a place to return to</div><p class="strcb" style="color:rgba(200,213,196,.9);">All investors receive preferred access to Seven Feathers each year, whether for personal rest or to host their own retreat. Benefits scale with investment amount, from complimentary nights to venue rental discounts and priority booking.</p><div class="strd"><div class="strdi">Complimentary stays each year, scaled to investment level</div><div class="strdi">Venue rental discounts for hosting your own gatherings</div><div class="strdi">Priority booking before public availability opens</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="isec">
+    <div class="ctab">
+      <div class="ctat">Ready to Begin the Conversation?</div>
+      <p class="ctax">There is no substitute for a real conversation. Reach out and tell us a little about yourself, what draws you to this vision, what questions you have, and what kind of partnership you might be imagining.</p>
+      <div class="ctacs">
+        <a href="mailto:info@7feathersretreat.com" class="ctac ctacf">✉️ &nbsp;info@7feathersretreat.com</a>
+        <a href="tel:3362676897" class="ctac">📱 &nbsp;336-267-6897</a>
+      </div>
+      <p style="font-size:.78rem;color:var(--st);margin-top:1.5rem;letter-spacing:.05em;">Call or text welcome · Email preferred for initial introductions</p>
+    </div>
+  </div>
+
+</div><!-- end #ic -->
+</div><!-- end page-invest -->
+
+<!-- DOCUMENT VIEWER OVERLAY -->
+<div id="docOverlay" class="doc-overlay" oncontextmenu="return false;">
+  <button class="doc-close" onclick="closeDocViewer()" title="Close">✕</button>
+  <div class="doc-viewer">
+
+    <div class="dv-conf">Confidential, Investment Opportunity</div>
+
+    <div class="dv-hero">
+      <span class="dv-feather">🪶</span>
+      <h1>Seven <em>Feathers</em><br>Retreat</h1>
+      <div class="dv-sub">Investment Opportunity</div>
+      <div class="dv-loc">Ashe County, NC · Blue Ridge Mountains</div>
+    </div>
+
+    <div class="dv-snap">
+      <div><span>Property</span><span>9.62 acres · Ashe County, NC</span></div>
+      <div><span>Current Status</span><span>Operating · 4.96★ Airbnb</span></div>
+      <div><span>Investment Ask</span><span>$200,000</span></div>
+      <div><span>Year 3 Revenue</span><span>$131,000 to $170,000</span></div>
+      <div><span>Structure</span><span>Equity, rev share, loan, or hybrid</span></div>
+      <div><span>Contact</span><span><a href="mailto:info@7feathersretreat.com" style="color:var(--g);">info@7feathersretreat.com</a></span></div>
+    </div>
+
+    <div class="dv-divider"></div>
+
+    <!-- EXECUTIVE SUMMARY -->
+    <div class="dv-sect">
+      <div class="dv-ey">Executive Summary</div>
+      <div class="dv-h2">The <em>Opportunity</em></div>
+      <p class="dv-p">Seven Feathers Retreat is a 9.62-acre property in Ashe County, North Carolina, currently operating as a short-term vacation rental with a 4.96-star Airbnb rating. The property is being acquired by the founder through owner financing and is positioned for phased expansion into a multi-revenue retreat destination offering vacation rentals, retreat venue rental to outside facilitators, and nature-based experiences, while continuing to generate income throughout the transition.</p>
+      <p class="dv-p">The investment thesis is straightforward: optimize and expand an existing, income-producing property into a multi-revenue retreat destination in one of the fastest-growing sectors of the tourism economy. The primary revenue model combines short-term vacation rentals with venue rental to independent retreat facilitators, creating scalable income beyond any single person's time. Each phase generates revenue before the next requires significant capital, building on proven demand at every step.</p>
+      <div class="dv-quote">This property has earned real revenue from day one. Under full-time management, these numbers are just the beginning.</div>
+    </div>
+
+    <!-- WHY WELLNESS -->
+    <div class="dv-sect">
+      <div class="dv-h3">Why Wellness, Why Now</div>
+      <p class="dv-p">The global wellness tourism market was valued at approximately $950 billion in 2024 and is projected to reach $1.7 to $2.0 trillion by 2030, growing at 8 to 10% annually. North America accounts for 35 to 42% of the global market.</p>
+      <p class="dv-p">Demand for intimate, nature-based, owner-operated sanctuaries is expanding, and the supply of authentic ones in the Blue Ridge region remains limited. Ashe County offers genuine seclusion, open land, and lower operating costs, allowing competitive pricing with healthy margins.</p>
+    </div>
+
+    <!-- CURRENT REVENUE -->
+    <div class="dv-sect">
+      <div class="dv-h3">Current Revenue Performance</div>
+      <table class="dv-tbl">
+        <thead><tr><th>Period</th><th>Revenue</th></tr></thead>
+        <tbody>
+          <tr><td>2021–2023 Revenue</td><td>$6,700 to $14,500/year, part-time rental, owner off-site</td></tr>
+          <tr><td>2024 Revenue</td><td>$2,691, Hurricane Helene impact, property temporarily unlisted</td></tr>
+          <tr><td>2025 Revenue</td><td>$10,290 gross / $9,981 net, partial year under active management</td></tr>
+          <tr><td>Airbnb Rating</td><td>4.96 out of 5.0 stars</td></tr>
+          <tr><td>Current Rates</td><td>$109/night weekends · $99/night weekdays · $50 cleaning fee</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="dv-divider"></div>
+
+    <!-- PHASE BREAKDOWNS -->
+    <div class="dv-sect">
+      <div class="dv-ey">Phase Breakdowns</div>
+      <div class="dv-h2">The Expansion <em>Plan</em></div>
+      <p class="dv-p">Each phase is designed to generate revenue before the next phase requires significant capital. There is no single moment of high risk. The business builds on itself, stage by stage.</p>
+
+      <div class="dv-phase">
+        <div class="dv-phase-head"><span class="dv-phase-name">Phase 1, Immediate Revenue Optimization</span><span class="dv-phase-meta">$2,000 to $5,000 · Months 1 to 3</span></div>
+        <ul>
+          <li>Expand from Airbnb-only to VRBO, Booking.com, Hipcamp, and wellness directories</li>
+          <li>Create direct booking website to capture guests with no platform fees</li>
+          <li>Implement dynamic pricing based on 4.96-star rating, seasonal demand, and local events</li>
+          <li>Introduce weekday remote worker rates and extended-stay pricing for 5-plus night bookings</li>
+          <li>Offer Reiki sessions to cottage guests ($75/session) and open to local community</li>
+          <li>Upgrade to on-demand water heater, highest-impact, lowest-cost improvement</li>
+          <li>Guided forest bathing walks ($30/person), stargazing evenings ($25/person)</li>
+          <li>Host monthly donation-based healing circles to build reputation and mailing list</li>
+          <li>Expected revenue: $20,000 to $30,000 annualized from optimization alone</li>
+        </ul>
+      </div>
+
+      <div class="dv-phase">
+        <div class="dv-phase-head"><span class="dv-phase-name">Phase 2, Accommodation &amp; Bathhouse Expansion</span><span class="dv-phase-meta">$70,000 to $80,000 · Months 3 to 9</span></div>
+        <ul>
+          <li>Install two ZomeStudio dwellings (bio-ceramic, 120 to 170 sq ft each) on prepared sites</li>
+          <li>Fireproof to 2,200°F, waterproof, mold-proof, pest-proof, 140 mph wind rating</li>
+          <li>Assemble in 5 to 10 days each, placed on non-permanent wood deck platforms</li>
+          <li>Two ZomeStudio structures: $38,000 to $44,000 · Two decks: $10,000 to $14,000 · Furnishings: $8,000 to $10,000</li>
+          <li>Convert existing 700 sq ft kennel building into shared bathhouse and communal kitchen ($12,000)</li>
+          <li>Bathhouse eliminates the need for individual plumbing to each Zome, reducing per-unit cost</li>
+          <li>This is the essential unlock: sleeping space and bathrooms together enable retreat hosting</li>
+          <li>Target Zome rate: $150 to $200/night · Two units at 50% occupancy: $54,000 to $72,000/year</li>
+          <li>Opens the property to independent retreat facilitators as a fully equipped venue</li>
+        </ul>
+      </div>
+
+      <div class="dv-phase">
+        <div class="dv-phase-head"><span class="dv-phase-name">Phase 3, Property Enhancement &amp; Programming</span><span class="dv-phase-meta">$10,000 to $15,000 · Months 9 to 15</span></div>
+        <ul>
+          <li>Outdoor meditation and ceremony areas with covered seating</li>
+          <li>Medicinal herb garden expansion, creek-side seating, marked hiking trails</li>
+          <li>Pond repair and enhancement for reflection space</li>
+          <li>Professional photography of property and retreat experience</li>
+          <li>Market venue rental to independent facilitators running workshops, healing retreats, women's circles</li>
+          <li>Venue rental pricing: $800 to $1,500 per weekend depending on group size and services</li>
+          <li>Amy available as optional add-on Reiki practitioner for retreat groups</li>
+          <li>Projected venue rental revenue: $30,000 to $45,000 per year at 2 to 3 weekends per month</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dv-divider"></div>
+
+    <!-- CAPITAL ALLOCATION -->
+    <div class="dv-sect">
+      <div class="dv-ey">Capital Allocation</div>
+      <div class="dv-h2">How the Investment <em>Is Used</em></div>
+      <table class="dv-tbl">
+        <thead><tr><th>Category</th><th>Amount</th></tr></thead>
+        <tbody>
+          <tr><td>Property Down Payment (owner contribution $15,000, investor funding $10,000)</td><td>$10,000</td></tr>
+          <tr><td>Phase 1, Revenue Optimization</td><td>$5,000</td></tr>
+          <tr><td>Phase 2, Accommodation &amp; Bathhouse Expansion</td><td>$75,000</td></tr>
+          <tr><td>Phase 3, Property Enhancement &amp; Programming</td><td>$15,000</td></tr>
+          <tr><td>Marketing &amp; Branding</td><td>$7,000</td></tr>
+          <tr><td>Owner-Operator Compensation (months 1 to 12)</td><td>$36,000</td></tr>
+          <tr><td>Operating Reserve</td><td>$35,000</td></tr>
+          <tr><td>Contingency</td><td>$17,000</td></tr>
+          <tr><td><strong>TOTAL</strong></td><td><strong>$200,000</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="dv-divider"></div>
+
+    <!-- REVENUE PROJECTIONS -->
+    <div class="dv-sect">
+      <div class="dv-ey">Revenue Projections</div>
+      <div class="dv-h2">Conservative <em>3-Year Path</em></div>
+      <p class="dv-p">Built from occupancy rates, nightly rates, and venue booking frequency. Each assumption is shown below so every number can be traced and tested. Projections will be updated quarterly as real data becomes available.</p>
+      <table class="dv-tbl">
+        <thead><tr><th>Revenue Stream</th><th style="text-align:center;">Year 1</th><th style="text-align:center;">Year 2</th><th>Year 3</th></tr></thead>
+        <tbody>
+          <tr><td>Total Accommodation Revenue</td><td style="text-align:center;">$51K–$57K</td><td style="text-align:center;">$84K–$98K</td><td>$99K–$116K</td></tr>
+          <tr><td>Venue Rental Weekends</td><td style="text-align:center;">$6K–$15K</td><td style="text-align:center;">$12K–$27K</td><td>$22K–$36K</td></tr>
+          <tr><td>Reiki, Experiences &amp; Events</td><td style="text-align:center;">$5K–$12K</td><td style="text-align:center;">$8K–$15K</td><td>$10K–$18K</td></tr>
+          <tr><td><strong>TOTAL REVENUE</strong></td><td style="text-align:center;"><strong>$62K–$84K</strong></td><td style="text-align:center;"><strong>$104K–$140K</strong></td><td><strong>$131K–$170K</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="dv-h3">Assumptions Behind the Numbers</div>
+      <table class="dv-tbl">
+        <thead><tr><th>Unit</th><th>Occupancy</th><th>Avg Nightly Rate</th><th>Available Nights</th></tr></thead>
+        <tbody>
+          <tr><td>Cottage (Yr 1 / 2 / 3)</td><td>55% / 60% / 64%</td><td>$125 / $135 / $145</td><td>365 all years</td></tr>
+          <tr><td>Zome 1 (Yr 1 / 2 / 3)</td><td>44% / 47% / 52%</td><td>$160 / $165 / $175</td><td>~180 / 365 / 365</td></tr>
+          <tr><td>Zome 2 (Yr 1 / 2 / 3)</td><td>44% / 47% / 52%</td><td>$160 / $165 / $175</td><td>~180 / 365 / 365</td></tr>
+          <tr><td>Venue weekends/year</td><td colspan="3">6–10 (Yr 1) · 12–18 (Yr 2) · 18–24 (Yr 3) at $1,000–$1,500 avg</td></tr>
+        </tbody>
+      </table>
+      <p class="dv-p">Venue weekends use the same beds as nightly rentals, so there is no double-counting. The occupancy figures above already account for nights reserved for retreat use. Year 1 Zome nights reflect a partial year (units come online around month 6 to 8). Cottage rate increases in Years 2 and 3 reflect garden, pond, and grounds improvements from Phase 3, along with growing reputation and review history.</p>
+
+      <div class="dv-h3">Comparable Performance</div>
+      <p class="dv-p">The previous property owner earned up to $51,000 annually across four rental units on this property and a neighboring property in Trade, TN, with rates of $75 to $95 per night, no advertising, no experiences, and no retreat programming. Those earnings represent the floor that Seven Feathers is already building above with active management, a 4.96-star rating, and higher nightly rates. There are no comparable Zome structures in the region. Geodesic domes and unique glamping structures in the Blue Ridge consistently command premium rates and high occupancy, driven by guests seeking distinctive experiences rather than just a place to sleep.</p>
+
+      <div class="dv-h3">Annual Operating Expenses</div>
+      <table class="dv-tbl">
+        <thead><tr><th>Expense</th><th>Annual Cost</th></tr></thead>
+        <tbody>
+          <tr><td>Property Taxes</td><td>$1,700</td></tr>
+          <tr><td>Insurance (property + commercial liability)</td><td>$2,000</td></tr>
+          <tr><td>Gas / Heating</td><td>$2,400</td></tr>
+          <tr><td>Internet (all units)</td><td>$1,080</td></tr>
+          <tr><td>Electric</td><td>$4,200</td></tr>
+          <tr><td>Supplies</td><td>$2,400</td></tr>
+          <tr><td>Platform Booking Fees (~3%)</td><td>$2,000–$4,000</td></tr>
+          <tr><td>Maintenance &amp; Repairs</td><td>$2,000–$3,000</td></tr>
+          <tr><td><strong>TOTAL OPERATING EXPENSES</strong></td><td><strong>$18,000–$22,000</strong></td></tr>
+        </tbody>
+      </table>
+      <p class="dv-p">At Year 1 revenue of $62K to $84K and operating expenses of $18K to $22K, the property generates $40K to $62K in operating margin before owner compensation. By Year 3, operating margin reaches $108K to $147K. Website hosting and marketing are handled by the owner at no additional cost during the initial growth period. As revenue grows, hiring for cleaning, guest support, and property maintenance will be funded from operating income. Platform fees decrease further as direct bookings through the retreat's own website grow as a share of total reservations.</p>
+      <div class="dv-quote">Year 1 revenue grows as Zome accommodations and the bathhouse come online. Year 2 reflects the full potential of three unique guest accommodations and active venue rental. Year 3 reaches multi-stream maturity.</div>
+    </div>
+
+    <div class="dv-divider"></div>
+
+    <!-- MARKET ANALYSIS -->
+    <div class="dv-sect">
+      <div class="dv-ey">Market Analysis</div>
+      <div class="dv-h2">The Wellness Tourism <em>Opportunity</em></div>
+      <div class="dv-h3">Global Market</div>
+      <p class="dv-p">The global wellness tourism market was valued at approximately $950 billion in 2024, with projections ranging from $1.7 to $2.0 trillion by 2030 to 2034. Growth rates range from 6 to 11% annually across major research sources. North America accounts for roughly 35 to 42% of the global market.</p>
+      <div class="dv-h3">Key Market Trends</div>
+      <ul class="dv-list">
+        <li><strong>Pet-Inclusive Travel:</strong> 78% of American pet owners travel with their pets annually. 52% of all travelers factor pet accommodations into their plans. Seven Feathers' no-size-restriction, no-fee pet policy is a direct competitive advantage.</li>
+        <li><strong>Homesteading &amp; Self-Sufficiency:</strong> Post-pandemic interest in gardening, sustainable living, and food self-sufficiency continues to drive demand for hands-on educational experiences.</li>
+        <li><strong>Remote Work &amp; Extended Stays:</strong> High-speed internet combined with a secluded natural setting creates conditions for extended stays and remote work retreats, a rapidly growing segment.</li>
+        <li><strong>Nature-Based Restoration:</strong> Demand for forest bathing, earth-based ceremony, and outdoor wellness programming has grown significantly since 2020 and continues to expand.</li>
+      </ul>
+      <div class="dv-h3">Location Advantage: Ashe County, NC</div>
+      <p class="dv-p">Ashe County is a rural mountain community in the northwestern corner of North Carolina, bordering Virginia and Tennessee. It offers what guests are actively seeking: genuine seclusion, quiet, and wide-open land, with lower operating costs that allow competitive pricing and healthy margins.</p>
+      <p class="dv-p">The lower cost of living and land values in Ashe County also allow the retreat to offer competitive pricing while maintaining healthy margins, a structural advantage over competitors in higher-cost markets.</p>
+      <div class="dv-h3">Competitive Position</div>
+      <ul class="dv-list">
+        <li>Small, intimate, owner-operated sanctuary, as distinct from large commercial retreat centers</li>
+        <li>Venue rental model serving independent facilitators who need dedicated space, scalable beyond any one person's calendar</li>
+        <li>Pet-friendly property with genuine space, fenced acreage, creek access, no restrictions</li>
+        <li>Accessible pricing without sacrificing authenticity or experience quality</li>
+        <li>On-site Reiki Master available as an optional add-on for venue rental groups</li>
+        <li>Multi-revenue model combining nightly vacation rentals, retreat venue rental, and experiential programming</li>
+      </ul>
+    </div>
+
+    <div class="dv-divider"></div>
+
+    <!-- RISK MITIGATION -->
+    <div class="dv-sect">
+      <div class="dv-ey">Risk Mitigation</div>
+      <div class="dv-h2">Built-In <em>Safety Factors</em></div>
+      <p class="dv-p">Every element of the expansion plan has been designed to limit downside exposure and build on demonstrated, real demand.</p>
+      <div class="dv-h3">Existing Revenue Base</div>
+      <p class="dv-p">The property is already generating rental income with a 4.96-star Airbnb rating. This is an expansion of an operating business with proven demand. Revenue continues at every stage of the buildout.</p>
+      <div class="dv-h3">Proven Demand</div>
+      <p class="dv-p">The property has generated consistent rental income across multiple years, reaching $14,487 in a single year with only part-time availability and no on-site hosting. Under active, full-time management beginning in 2025, the property reached $10,290 in a partial year with significant growth capacity ahead. The previous owner earned up to $51,000 annually across four units in this area with minimal effort, confirming the demand baseline.</p>
+      <div class="dv-h3">Phased Approach</div>
+      <p class="dv-p">Investment scales with demonstrated success at each stage. Phase 1 requires minimal capital ($2,000 to $5,000) and begins generating incremental revenue immediately. Each subsequent phase is funded in part by the revenue generated in the prior phase.</p>
+      <div class="dv-h3">Owner-Operated Advantage</div>
+      <p class="dv-p">The owner lives on the property full-time and serves as host, venue manager, and retreat coordinator. This eliminates property management fees (typically 15 to 25% of gross revenue) and ensures the authentic, personal hospitality that drives the 4.96-star rating. Owner-operator compensation is budgeted into the capital raise, ensuring full-time, undivided attention to the business during the critical ramp-up period.</p>
+      <div class="dv-h3">Continuity Planning</div>
+      <p class="dv-p">Amy is actively assembling a board of advisors and seeking an operations partner to ensure business continuity. This is a priority alongside the build-out, ensuring the retreat can maintain quality and momentum even during periods when the founder is unavailable. As the business scales, staff will be hired for cleaning, guest support, and property maintenance, funded by operating income.</p>
+      <div class="dv-h3">Diversified Income Streams</div>
+      <p class="dv-p">The business draws from multiple independent revenue sources: nightly rentals, Reiki sessions, day experiences, retreat programming, and community events. Each stream contributes on its own terms, creating stability and room to grow across all of them.</p>
+      <div class="dv-h3">Zoning &amp; Permitting Confirmed</div>
+      <p class="dv-p">ZomeStudio dwellings are non-permanent structures and require no zoning approval, confirmed with Ashe County. The kennel-to-bathhouse conversion involves an existing building with no structural changes, so no building permit is required. This eliminates permitting risk and delays from the expansion timeline.</p>
+      <div class="dv-h3">Eco-Friendly, Low-Risk Infrastructure</div>
+      <p class="dv-p">Zome dwellings use bio-ceramic MgO panels rated fireproof (to 2,200°F), waterproof, mold-proof, and pest-proof with a 140 mph wind rating. They assemble in 5 to 10 days with no heavy machinery and are placed on non-permanent foundations. The fireproof rating and non-permanent classification also help keep property insurance costs low, estimated at approximately $2,000 per year for property and commercial liability coverage.</p>
+      <div class="dv-h3">Transparency Commitment</div>
+      <p class="dv-p">All market statistics cited in this document are sourced from published industry research. Financial projections will be updated quarterly as real data becomes available. Investors will receive regular, honest communication about performance, including what is working and what needs adjustment.</p>
+    </div>
+
+    <div class="dv-divider"></div>
+
+    <!-- INVESTMENT STRUCTURE -->
+    <div class="dv-sect">
+      <div class="dv-ey">Investment Structure</div>
+      <div class="dv-h2">Ways to <em>Partner</em></div>
+      <p class="dv-p">Partnership structures are flexible and designed around what each person brings and what they need in return. A formal operating agreement defines rights and responsibilities for all parties.</p>
+      <ul class="dv-list">
+        <li><strong>Equity Stake:</strong> Hold an ownership percentage in the retreat business, sharing in both the upside as revenues grow and the long-term value of what we are building together. Percentage negotiated based on investment amount.</li>
+        <li><strong>Revenue Share:</strong> Receive an agreed percentage of gross or net revenue over a defined period. Can be tied to specific revenue streams. Transparent quarterly reporting as standard.</li>
+        <li><strong>Loan with Interest:</strong> A straightforward loan structure with agreed interest and a repayment timeline. Repayment begins when revenue milestones are reached, with an option to convert to equity.</li>
+        <li><strong>Non-Financial Partnership:</strong> Skills, networks, labor, materials, or expertise that contribute meaningfully. Marketing, construction, wellness facilitation, or network connections all have real value here.</li>
+      </ul>
+      <div class="dv-quote">The best agreements are built around what each person brings and what they need in return. If you have an idea that does not fit neatly into these categories, bring it.</div>
+    </div>
+
+    <div class="dv-divider"></div>
+
+    <!-- EXIT STRATEGY -->
+    <div class="dv-sect">
+      <div class="dv-ey">Exit Strategy</div>
+      <div class="dv-h2">Path to <em>Return</em></div>
+      <p class="dv-p">Investors have multiple clear options for realizing a return on their investment:</p>
+      <ul class="dv-list">
+        <li><strong>Sale as Turnkey Business:</strong> The property and retreat operation, once established with multiple revenue streams and a strong reputation, can be sold as a turnkey retreat business. Comparable properties in the Blue Ridge command a significant premium.</li>
+        <li><strong>Refinance to Return Capital:</strong> Once the property has appreciated and the business demonstrates consistent revenue, refinancing can return investor principal while the retreat continues operating.</li>
+        <li><strong>Ongoing Profit Sharing:</strong> Investors who prefer long-term participation can receive ongoing distributions as the business grows and matures across Years 2 through 5 and beyond.</li>
+        <li><strong>Investor Buyout:</strong> After a successful proof of concept, the owner may seek to refinance or raise additional capital to buy out early investors at an agreed valuation.</li>
+      </ul>
+    </div>
+
+    <div class="dv-divider"></div>
+
+    <!-- CLOSING -->
+    <div style="text-align:center;padding:2rem 0 3rem;">
+      <span style="font-size:2rem;display:block;margin-bottom:1rem;">🪶</span>
+      <div class="dv-h2" style="margin-bottom:.5rem;">Ready to Begin the <em>Conversation?</em></div>
+      <p class="dv-p" style="text-align:center;">Seven Feathers is ready for partners who believe in what this land can become. Reach out to begin the conversation.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+        <a href="mailto:info@7feathersretreat.com" style="display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.4rem;background:var(--g);color:white;text-decoration:none;font-size:.82rem;letter-spacing:.08em;border-radius:2px;">✉️ info@7feathersretreat.com</a>
+        <a href="tel:3362676897" style="display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.4rem;border:1px solid var(--g);color:var(--g);text-decoration:none;font-size:.82rem;letter-spacing:.08em;border-radius:2px;">📱 336-267-6897</a>
+      </div>
+    </div>
+
+  </div><!-- end doc-viewer -->
+  <div class="doc-email-bar">
+    <span>Want a copy you can review offline?</span>
+    <a href="mailto:info@7feathersretreat.com?subject=Investment%20Document%20Request" class="doc-email-btn">✉️ Request Email Copy</a>
+  </div>
+</div><!-- end docOverlay -->
+
+<script src="script.js"></script>
+</body>
+</html>
